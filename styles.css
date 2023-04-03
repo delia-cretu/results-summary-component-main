@@ -1,0 +1,197 @@
+body {
+  background-color: #f7f7ff;
+}
+
+/* CSS Flexbox layout */
+
+.flexbox-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  height: 350px;
+  width: 500px;
+
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 10px 10px 20px 10px #dee5f8;
+
+  background-color: white;
+  font-style: normal;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+/* Styling the results section */
+
+.results-section {
+  background-image: linear-gradient(#7857ff, #2e2be9);
+  height: 100%;
+  width: 50%;
+  border-radius: 20px;
+  overflow: hidden;
+
+  padding: 30px 35px;
+  text-align: center;
+
+  color: white;
+}
+
+#results-title {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.results-score {
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+
+  width: 135px;
+  height: 135px;
+  border-radius: 100%;
+
+  margin: 15px auto;
+  padding-top: 30px;
+  text-align: center;
+}
+
+#results-score1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+#results-score2 {
+  opacity: 0.4;
+  font-size: 0.8rem;
+  margin-top: -25px;
+}
+
+#results-text1 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+#results-text2 {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Styling the summary section */
+
+.summary-section {
+  background-color: white;
+  height: 100%;
+  width: 50%;
+  padding: 30px;
+}
+
+#summary-title {
+  color: #303b5a;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.reaction-bar,
+.memory-bar,
+.visual-bar,
+.verbal-bar {
+  border-radius: 7px;
+  overflow: hidden;
+
+  height: 35px;
+  padding-top: 8px;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.reaction-bar {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  padding-bottom: 10px;
+}
+
+.memory-bar {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.verbal-bar {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.visual-bar {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.icon {
+  padding: 0 5px 0 10px;
+  height: 15px;
+  opacity: 0.9;
+}
+
+#reaction-text {
+  color: hsla(0, 100%, 43%, 0.6);
+}
+
+#memory-text {
+  color: hsla(39, 100%, 56%);
+}
+
+#verbal-text {
+  color: hsla(166, 100%, 37%);
+}
+
+#visual-text {
+  color: hsla(234, 85%, 45%);
+}
+
+.score1 {
+  color: #303b5a;
+  font-weight: 800;
+}
+
+.score2 {
+  color: rgb(167, 167, 167);
+  font-weight: 800;
+}
+
+.score {
+  float: right;
+  padding-right: 10px;
+}
+
+/* Continue button */
+
+.button {
+  background-color: #303b5a;
+  color: white;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+/* Media query or mobile responsive design */
+
+@media (375px) {
+  .flexbox {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Footer */
+.attribution {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  font-size: 0.75rem;
+}
