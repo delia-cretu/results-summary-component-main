@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- Title -->
+    <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Flexbox Layout -->
+    <div class="flexbox-wrapper">
+      <div class="flexbox">
+        <!-- Results section -->
+        <div class="results-section">
+          <p id="results-title">Your Result</p>
+          <div class="results-score">
+            <p id="results-score1">76</p>
+            <p id="results-score2">of 100</p>
+          </div>
+          <p id="results-text1">Great</p>
+          <p id="results-text2">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+
+        <!-- Summary section -->
+        <div class="summary-section">
+          <!-- Title -->
+          <p id="summary-title">Summary</p>
+
+          <!-- Reaction -->
+          <div class="reaction-bar">
+            <img
+              src="assets/images/icon-reaction.svg"
+              alt="reaction icon"
+              class="icon"
+            />
+            <span id="reaction-text">Reaction</span>
+            <span class="score">
+              <span class="score1">80</span>
+              <span class="score2">/ 100</span>
+            </span>
+          </div>
+
+          <!-- Memory -->
+
+          <div class="memory-bar">
+            <img
+              src="assets/images/icon-memory.svg"
+              alt="memory icon"
+              class="icon"
+            />
+            <span id="memory-text">Memory</span>
+            <span class="score">
+              <span class="score1">92</span>
+              <span class="score2">/ 100</span>
+            </span>
+          </div>
+
+          <!-- Verbal -->
+          <div class="verbal-bar">
+            <img
+              src="assets/images/icon-verbal.svg"
+              alt="verbal icon"
+              class="icon"
+            />
+            <span id="verbal-text">Verbal</span>
+            <span class="score">
+              <span class="score1">61</span>
+              <span class="score2">/ 100</span>
+            </span>
+          </div>
+
+          <!-- Visual -->
+          <div class="visual-bar">
+            <img
+              src="assets/images/icon-visual.svg"
+              alt="visual icon"
+              class="icon"
+            />
+            <span id="visual-text">Visual</span>
+            <span class="score">
+              <span class="score1">72</span>
+              <span class="score2">/ 100</span>
+            </span>
+          </div>
+
+          <!-- Continue button -->
+          <button type="button" class="btn button">Continue</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Attribution -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by Delia Cretu.
+    </div>
+  </body>
+</html>
